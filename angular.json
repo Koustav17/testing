@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/testing",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,6 +27,10 @@
               "src/styles.css"
             ],
             "scripts": []
+          },
+          "deploy-ghpages": {
+            "builder": "angular-cli-ghpages:deploy",
+            "options": {}
           },
           "configurations": {
             "production": {
